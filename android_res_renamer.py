@@ -37,9 +37,9 @@ def main():
 
                     result = subprocess.call(cmd)
                     if result == 0:
-                        print("Renamed\n\t%s=>%s") % (os.path.join(dir_name, old_file), os.path.join(dir_name, new_file))
+                        print("Renamed\n\t%s => %s") % (os.path.join(dir_name, old_file), os.path.join(dir_name, new_file))
                     else:
-                        print("FAILURE!!!\n\t%s=>%s") % (os.path.join(dir_name, old_file), os.path.join(dir_name, new_file))
+                        print("FAILURE!!!\n\t%s => %s") % (os.path.join(dir_name, old_file), os.path.join(dir_name, new_file))
                         sys.exit(-1)
 
 
